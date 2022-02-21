@@ -1,0 +1,52 @@
+/* ESTILOS PRODUCTOS */
+.gridProductos{
+    display: grid;
+    grid-template-areas: "header header"
+                         "menuLateral sectionCards"
+                         "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 90%;
+
+    /*Estilos menú lateral*/
+    .menuLateral{
+        grid-area: menuLateral;
+        .btn{
+            margin: 0.3rem;
+            h2{
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+            &:hover{
+                .fas{
+                    color: $bg-naranja;
+                }
+            }
+        }
+        .offcanvas{
+            width: 20rem;
+            margin-top: 5.4rem;
+            .offcanvas-title{
+                font-size: 1.5rem;
+                background-color: white;
+                padding: 1rem;
+            }
+            .list-group{
+                a{
+                    color: whitesmoke;
+                    border: 2px solid whitesmoke;
+                }
+                .list-group-item{
+                    background-color: black;
+                }
+            } 
+        }
+    }
+    
+    .sectionCards{
+        grid-area: sectionCards;
+    }
+}   
+
