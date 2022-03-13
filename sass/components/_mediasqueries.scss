@@ -157,6 +157,8 @@
         .nosotros2{
             margin: 2rem 2rem 2rem 2rem;
             flex-direction: column;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 1.25rem;
             .colNosotros{
                 width: 100%;
                 align-items: center;
@@ -266,6 +268,19 @@
         }
     }
 
+    /*MEDIA QUERIES - NOSOTROS*/
+    .gridNosotros{
+        .nosotros1{
+            margin: 0;
+            border-radius: 0;
+        }
+        .nosotros2{
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+
+
    /*MEDIA QUERIES - CONTACTO*/
    .gridContacto{
         .form{
@@ -335,11 +350,6 @@
            .cartProductos{
                .cardCarrito{
                     height: 7rem;
-                    div{
-                        span{
-                            display: none;
-                        }
-                    }
                 }
             }
            .cardInfodepago{

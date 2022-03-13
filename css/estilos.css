@@ -110,7 +110,7 @@ footer {
       flex-direction: column;
       width: 100%;
       padding-left: 5%; }
-      footer .sectionFooter2 div h5 {
+      footer .sectionFooter2 div span {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 110%; }
@@ -296,7 +296,8 @@ footer {
     display: flex;
     border-top-right-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;
-    background-color: #ff9101c7; }
+    background-color: #ff9101c7;
+    align-items: center; }
     .gridNosotros .nosotros2 .colNosotros {
       width: 50%;
       padding: 3rem;
@@ -348,6 +349,15 @@ footer {
         background-color: black; }
   .gridProductos .sectionCards {
     grid-area: sectionCards; }
+    .gridProductos .sectionCards .card .row {
+      height: 10rem; }
+      .gridProductos .sectionCards .card .row div {
+        height: 100%; }
+        .gridProductos .sectionCards .card .row div .card-img {
+          height: 100%;
+          object-fit: contain; }
+        .gridProductos .sectionCards .card .row div .card-body .card-title {
+          font-size: 130%; }
 
 /* ESTILOS CONTACTO*/
 .gridContacto {
@@ -358,7 +368,7 @@ footer {
   /*Estilos formulario de contacto*/
   /*Estilos info contacto*/ }
   .gridContacto .form {
-    margin: auto 0 auto 3rem;
+    margin: 2rem 0 auto 3rem;
     grid-area: form;
     width: 80%;
     height: 85%;
@@ -678,7 +688,9 @@ footer {
       border-bottom-right-radius: 1.25rem; }
     .gridNosotros .nosotros2 {
       margin: 2rem 2rem 2rem 2rem;
-      flex-direction: column; }
+      flex-direction: column;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem; }
       .gridNosotros .nosotros2 .colNosotros {
         width: 100%;
         align-items: center; }
@@ -749,6 +761,13 @@ footer {
       padding-right: 5%; }
       .sectionFooter2 div p {
         text-align: center; }
+  /*MEDIA QUERIES - NOSOTROS*/
+  .gridNosotros .nosotros1 {
+    margin: 0;
+    border-radius: 0; }
+  .gridNosotros .nosotros2 {
+    margin: 0;
+    border-radius: 0; }
   /*MEDIA QUERIES - CONTACTO*/
   .gridContacto .form {
     margin-top: 0;
@@ -798,7 +817,5 @@ footer {
       width: 100%; }
       .sectionCart .cart .cartProductos .cardCarrito {
         height: 7rem; }
-        .sectionCart .cart .cartProductos .cardCarrito div span {
-          display: none; }
       .sectionCart .cart .cardInfodepago {
         width: 100%; } }

@@ -47,6 +47,23 @@
     
     .sectionCards{
         grid-area: sectionCards;
+        .card{
+            .row{
+                height: 10rem;
+                div{
+                    height: 100%;
+                    .card-img{
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                    .card-body{
+                        .card-title{
+                           font-size: 130%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }   
 
